@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIView+AnchorPoint.h"
 
-@implementation UIView (Animations)
+@implementation UIView (AnchorPoint)
 
 +(void)setAnchorPoint:(CGPoint)anchorPoint forView:(UIView *)view
 {

@@ -11,7 +11,7 @@
 #import "Constants.h"
 
 
-@interface MMStretchGestureRecognizer1 : UIGestureRecognizer{
+@interface MMStretchExactGestureRecognizer : UIGestureRecognizer{
     // the collection of valid touches for this gesture
     NSMutableSet* ignoredTouches;
     NSMutableOrderedSet* possibleTouches;

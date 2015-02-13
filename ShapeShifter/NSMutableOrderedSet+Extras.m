@@ -1,12 +1,12 @@
 //
-//  NSMutableSet+Extras.m
+//  NSMutableOrderedSet+Extras.m
 //  jotuiexample
 //
 //  Created by Adam Wulf on 6/19/12.
-//  Copyright (c) 2012 Adonit. All rights reserved.
+//  Copyright (c) 2014 Milestone Made, LLC. All rights reserved.
 //
 
-#import "NSMutableSet+Extras.h"
+#import "NSMutableOrderedSet+Extras.h"
 
 @implementation NSMutableSet (Extras)
 

@@ -8,18 +8,18 @@
 
 #import "MMShapeViewController.h"
 #import "MMDebugQuadrilateralView.h"
-#import "MMStretchGestureRecognizer1.h"
-#import "MMStretchGestureRecognizer2.h"
-#import "MMStretchGestureRecognizer3.h"
-#import "UIView+Animations.h"
+#import "MMStretchExactGestureRecognizer.h"
+#import "MMStretchAverageGestureRecognizer.h"
+#import "MMStretchOrientationGestureRecognizer.h"
+#import "UIView+AnchorPoint.h"
 #import "Constants.h"
 
 @implementation MMShapeViewController{
     MMDebugQuadrilateralView* debugView;
     UIImageView* draggable;
-    MMStretchGestureRecognizer1* gesture1;
-    MMStretchGestureRecognizer2* gesture2;
-    MMStretchGestureRecognizer3* gesture3;
+    MMStretchExactGestureRecognizer* gesture1;
+    MMStretchAverageGestureRecognizer* gesture2;
+    MMStretchOrientationGestureRecognizer* gesture3;
     
     CGPoint adjust;
     Quadrilateral firstQ;
@@ -72,9 +72,9 @@ const int COLINEAR = 0;
     // play nice with any existing transform on the view
     draggable.transform = CGAffineTransformConcat(CGAffineTransformMakeRotation(M_PI / 4),CGAffineTransformMakeScale(1.2, 1.2));
 
-    gesture1 = [[MMStretchGestureRecognizer1 alloc] initWithTarget:self action:@selector(didStretch:)];
-    gesture2 = [[MMStretchGestureRecognizer2 alloc] initWithTarget:self action:@selector(didStretch:)];
-    gesture3 = [[MMStretchGestureRecognizer3 alloc] initWithTarget:self action:@selector(didStretch:)];
+    gesture1 = [[MMStretchExactGestureRecognizer alloc] initWithTarget:self action:@selector(didStretch:)];
+    gesture2 = [[MMStretchAverageGestureRecognizer alloc] initWithTarget:self action:@selector(didStretch:)];
+    gesture3 = [[MMStretchOrientationGestureRecognizer alloc] initWithTarget:self action:@selector(didStretch:)];
     [self.view addGestureRecognizer:gesture1];
     [self.view addGestureRecognizer:gesture2];
     [self.view addGestureRecognizer:gesture3];
@@ -138,7 +138,7 @@ const int COLINEAR = 0;
 
 
 
--(void) didStretch:(MMStretchGestureRecognizer1*)gesture{
+-(void) didStretch:(MMStretchExactGestureRecognizer*)gesture{
     // first, set our anchor point to 0,0 if we're
     // beginning the gesture
     if(gesture.state == UIGestureRecognizerStateBegan){
@@ -166,11 +166,11 @@ const int COLINEAR = 0;
 
         // we want the transformed quad and our transformed view
         // to each begin at the exact same point.
-        Quadrilateral q1 = [self adjustedQuad:firstQ by:adjust];
-        Quadrilateral q2 = [self adjustedQuad:secondQ by:adjust];
+        Quadrilateral q1 = [self translateQuad:firstQ by:adjust];
+        Quadrilateral q2 = [self translateQuad:secondQ by:adjust];
         
         // generate the actual transform between the two quads
-        CATransform3D skewTransform = [MMStretchGestureRecognizer1 transformQuadrilateral:q1 toQuadrilateral:q2];
+        CATransform3D skewTransform = [MMStretchExactGestureRecognizer transformQuadrilateral:q1 toQuadrilateral:q2];
         
         // we can watch these scales to see how different
         // the x vs y scales are. if they are extremely different,
@@ -211,8 +211,8 @@ const int COLINEAR = 0;
     }
 }
 
-// move the quad by the input point amount
--(Quadrilateral) adjustedQuad:(Quadrilateral)a by:(CGPoint)p{
+// translate the quad by the input point amount
+-(Quadrilateral) translateQuad:(Quadrilateral)a by:(CGPoint)p{
     Quadrilateral output = a;
     output.upperLeft.x -= p.x;
     output.upperLeft.y -= p.y;

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Milestone Made, LLC. All rights reserved.
 //
 
-#import "MMStretchGestureRecognizer1.h"
+#import "MMStretchExactGestureRecognizer.h"
 #import "Constants.h"
-#import "NSMutableSet+Extras.h"
+#import "NSMutableOrderedSet+Extras.h"
 
 //
 // this gesture will ensure that the starting
@@ -18,7 +18,7 @@
 //
 // this gives the most dramatic results, but concave
 // quads will generate flipped and awkward transforms
-@implementation MMStretchGestureRecognizer1
+@implementation MMStretchExactGestureRecognizer
 
 
 -(id) init{

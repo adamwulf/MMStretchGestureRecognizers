@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6662019B18C15523006A58AA /* MMStretchGestureRecognizer2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6662019A18C15523006A58AA /* MMStretchGestureRecognizer2.mm */; };
+		6662019B18C15523006A58AA /* MMStretchAverageGestureRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6662019A18C15523006A58AA /* MMStretchAverageGestureRecognizer.mm */; };
 		6662019F18C15648006A58AA /* MMDebugQuadrilateralView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6662019E18C15648006A58AA /* MMDebugQuadrilateralView.m */; };
 		666201A218C15820006A58AA /* MMVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 666201A118C15820006A58AA /* MMVector.m */; };
-		666201A618C15F5D006A58AA /* MMStretchGestureRecognizer3.mm in Sources */ = {isa = PBXBuildFile; fileRef = 666201A518C15F5D006A58AA /* MMStretchGestureRecognizer3.mm */; };
+		666201A618C15F5D006A58AA /* MMStretchOrientationGestureRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 666201A518C15F5D006A58AA /* MMStretchOrientationGestureRecognizer.mm */; };
 		66AF167018B812D500A92F7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AF166F18B812D500A92F7F /* Foundation.framework */; };
 		66AF167218B812D500A92F7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AF167118B812D500A92F7F /* CoreGraphics.framework */; };
 		66AF167418B812D500A92F7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AF167318B812D500A92F7F /* UIKit.framework */; };
@@ -24,15 +24,15 @@
 		66AF169318B812D500A92F7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66AF169118B812D500A92F7F /* InfoPlist.strings */; };
 		66AF169518B812D500A92F7F /* ShapeShifterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF169418B812D500A92F7F /* ShapeShifterTests.m */; };
 		66AF16A018B8143400A92F7F /* MMShapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF169F18B8143400A92F7F /* MMShapeViewController.m */; };
-		66AF16A418B8154800A92F7F /* MMStretchGestureRecognizer1.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66AF16A318B8154800A92F7F /* MMStretchGestureRecognizer1.mm */; };
-		66B46AC318BA8FEC0059172F /* NSMutableSet+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B46AC218BA8FEC0059172F /* NSMutableSet+Extras.m */; };
+		66AF16A418B8154800A92F7F /* MMStretchExactGestureRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66AF16A318B8154800A92F7F /* MMStretchExactGestureRecognizer.mm */; };
+		66AFAD7F1A8E8C5600FD0263 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CD1BE618B824710091489C /* opencv2.framework */; };
+		66B46AC318BA8FEC0059172F /* NSMutableOrderedSet+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B46AC218BA8FEC0059172F /* NSMutableOrderedSet+Extras.m */; };
 		66CD1BDB18B822E10091489C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CD1BDA18B822E10091489C /* Constants.m */; };
 		66CD1BDD18B823680091489C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CD1BDC18B823680091489C /* AVFoundation.framework */; };
 		66CD1BDF18B823760091489C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CD1BDE18B823760091489C /* AssetsLibrary.framework */; };
 		66CD1BE518B823D20091489C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CD1BE418B823D20091489C /* CoreMedia.framework */; };
-		66CD1BE818B8247F0091489C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CD1BE618B824710091489C /* opencv2.framework */; };
 		66CD1BEA18B85FB00091489C /* space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66CD1BE918B85FB00091489C /* space.jpg */; };
-		66FF81F3194AD775000EF072 /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FF81F2194AD775000EF072 /* UIView+Animations.m */; };
+		66FF81F3194AD775000EF072 /* UIView+AnchorPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FF81F2194AD775000EF072 /* UIView+AnchorPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6662019918C15523006A58AA /* MMStretchGestureRecognizer2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMStretchGestureRecognizer2.h; sourceTree = "<group>"; };
-		6662019A18C15523006A58AA /* MMStretchGestureRecognizer2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMStretchGestureRecognizer2.mm; sourceTree = "<group>"; };
+		6662019918C15523006A58AA /* MMStretchAverageGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMStretchAverageGestureRecognizer.h; sourceTree = "<group>"; };
+		6662019A18C15523006A58AA /* MMStretchAverageGestureRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMStretchAverageGestureRecognizer.mm; sourceTree = "<group>"; };
 		6662019D18C15648006A58AA /* MMDebugQuadrilateralView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDebugQuadrilateralView.h; sourceTree = "<group>"; };
 		6662019E18C15648006A58AA /* MMDebugQuadrilateralView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDebugQuadrilateralView.m; sourceTree = "<group>"; };
-		666201A018C15820006A58AA /* MMVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMVector.h; path = ../MMVector.h; sourceTree = "<group>"; };
-		666201A118C15820006A58AA /* MMVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMVector.m; path = ../MMVector.m; sourceTree = "<group>"; };
-		666201A418C15F5D006A58AA /* MMStretchGestureRecognizer3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMStretchGestureRecognizer3.h; sourceTree = "<group>"; };
-		666201A518C15F5D006A58AA /* MMStretchGestureRecognizer3.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = MMStretchGestureRecognizer3.mm; sourceTree = "<group>"; };
+		666201A018C15820006A58AA /* MMVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVector.h; sourceTree = "<group>"; };
+		666201A118C15820006A58AA /* MMVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVector.m; sourceTree = "<group>"; };
+		666201A418C15F5D006A58AA /* MMStretchOrientationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMStretchOrientationGestureRecognizer.h; sourceTree = "<group>"; };
+		666201A518C15F5D006A58AA /* MMStretchOrientationGestureRecognizer.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = MMStretchOrientationGestureRecognizer.mm; sourceTree = "<group>"; };
 		66AF166C18B812D500A92F7F /* ShapeShifter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShapeShifter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66AF166F18B812D500A92F7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		66AF167118B812D500A92F7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,21 +72,21 @@
 		66AF169418B812D500A92F7F /* ShapeShifterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeShifterTests.m; sourceTree = "<group>"; };
 		66AF169E18B8143400A92F7F /* MMShapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMShapeViewController.h; sourceTree = "<group>"; };
 		66AF169F18B8143400A92F7F /* MMShapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMShapeViewController.m; sourceTree = "<group>"; };
-		66AF16A218B8154800A92F7F /* MMStretchGestureRecognizer1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMStretchGestureRecognizer1.h; sourceTree = "<group>"; };
-		66AF16A318B8154800A92F7F /* MMStretchGestureRecognizer1.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMStretchGestureRecognizer1.mm; sourceTree = "<group>"; };
-		66B46AC118BA8FEC0059172F /* NSMutableSet+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableSet+Extras.h"; path = "../NSMutableSet+Extras.h"; sourceTree = "<group>"; };
-		66B46AC218BA8FEC0059172F /* NSMutableSet+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableSet+Extras.m"; path = "../NSMutableSet+Extras.m"; sourceTree = "<group>"; };
-		66CD1BD918B822E10091489C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
-		66CD1BDA18B822E10091489C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ../Constants.m; sourceTree = "<group>"; };
+		66AF16A218B8154800A92F7F /* MMStretchExactGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMStretchExactGestureRecognizer.h; sourceTree = "<group>"; };
+		66AF16A318B8154800A92F7F /* MMStretchExactGestureRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMStretchExactGestureRecognizer.mm; sourceTree = "<group>"; };
+		66B46AC118BA8FEC0059172F /* NSMutableOrderedSet+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableOrderedSet+Extras.h"; sourceTree = "<group>"; };
+		66B46AC218BA8FEC0059172F /* NSMutableOrderedSet+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableOrderedSet+Extras.m"; sourceTree = "<group>"; };
+		66CD1BD918B822E10091489C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		66CD1BDA18B822E10091489C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		66CD1BDC18B823680091489C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		66CD1BDE18B823760091489C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		66CD1BE018B8239F0091489C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		66CD1BE218B823B10091489C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		66CD1BE418B823D20091489C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		66CD1BE618B824710091489C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		66CD1BE618B824710091489C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = SOURCE_ROOT; };
 		66CD1BE918B85FB00091489C /* space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space.jpg; sourceTree = "<group>"; };
-		66FF81F2194AD775000EF072 /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animations.m"; sourceTree = "<group>"; };
-		66FF81F4194AD79C000EF072 /* UIView+Animations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Animations.h"; sourceTree = "<group>"; };
+		66FF81F2194AD775000EF072 /* UIView+AnchorPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnchorPoint.m"; sourceTree = "<group>"; };
+		66FF81F4194AD79C000EF072 /* UIView+AnchorPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AnchorPoint.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66CD1BE818B8247F0091489C /* opencv2.framework in Frameworks */,
+				66AFAD7F1A8E8C5600FD0263 /* opencv2.framework in Frameworks */,
 				66CD1BE518B823D20091489C /* CoreMedia.framework in Frameworks */,
 				66CD1BDF18B823760091489C /* AssetsLibrary.framework in Frameworks */,
 				66CD1BDD18B823680091489C /* AVFoundation.framework in Frameworks */,
@@ -133,10 +133,10 @@
 				66CD1BDA18B822E10091489C /* Constants.m */,
 				666201A018C15820006A58AA /* MMVector.h */,
 				666201A118C15820006A58AA /* MMVector.m */,
-				66B46AC118BA8FEC0059172F /* NSMutableSet+Extras.h */,
-				66B46AC218BA8FEC0059172F /* NSMutableSet+Extras.m */,
-				66FF81F4194AD79C000EF072 /* UIView+Animations.h */,
-				66FF81F2194AD775000EF072 /* UIView+Animations.m */,
+				66B46AC118BA8FEC0059172F /* NSMutableOrderedSet+Extras.h */,
+				66B46AC218BA8FEC0059172F /* NSMutableOrderedSet+Extras.m */,
+				66FF81F4194AD79C000EF072 /* UIView+AnchorPoint.h */,
+				66FF81F2194AD775000EF072 /* UIView+AnchorPoint.m */,
 			);
 			name = "Supporting Classes";
 			sourceTree = "<group>";
@@ -226,12 +226,12 @@
 		66AF16A118B8153600A92F7F /* Gestures */ = {
 			isa = PBXGroup;
 			children = (
-				66AF16A218B8154800A92F7F /* MMStretchGestureRecognizer1.h */,
-				66AF16A318B8154800A92F7F /* MMStretchGestureRecognizer1.mm */,
-				6662019918C15523006A58AA /* MMStretchGestureRecognizer2.h */,
-				6662019A18C15523006A58AA /* MMStretchGestureRecognizer2.mm */,
-				666201A418C15F5D006A58AA /* MMStretchGestureRecognizer3.h */,
-				666201A518C15F5D006A58AA /* MMStretchGestureRecognizer3.mm */,
+				66AF16A218B8154800A92F7F /* MMStretchExactGestureRecognizer.h */,
+				66AF16A318B8154800A92F7F /* MMStretchExactGestureRecognizer.mm */,
+				6662019918C15523006A58AA /* MMStretchAverageGestureRecognizer.h */,
+				6662019A18C15523006A58AA /* MMStretchAverageGestureRecognizer.mm */,
+				666201A418C15F5D006A58AA /* MMStretchOrientationGestureRecognizer.h */,
+				666201A518C15F5D006A58AA /* MMStretchOrientationGestureRecognizer.mm */,
 			);
 			name = Gestures;
 			sourceTree = "<group>";
@@ -335,14 +335,14 @@
 			files = (
 				66CD1BDB18B822E10091489C /* Constants.m in Sources */,
 				66AF16A018B8143400A92F7F /* MMShapeViewController.m in Sources */,
-				66AF16A418B8154800A92F7F /* MMStretchGestureRecognizer1.mm in Sources */,
-				66B46AC318BA8FEC0059172F /* NSMutableSet+Extras.m in Sources */,
+				66AF16A418B8154800A92F7F /* MMStretchExactGestureRecognizer.mm in Sources */,
+				66B46AC318BA8FEC0059172F /* NSMutableOrderedSet+Extras.m in Sources */,
 				6662019F18C15648006A58AA /* MMDebugQuadrilateralView.m in Sources */,
-				666201A618C15F5D006A58AA /* MMStretchGestureRecognizer3.mm in Sources */,
+				666201A618C15F5D006A58AA /* MMStretchOrientationGestureRecognizer.mm in Sources */,
 				66AF168018B812D500A92F7F /* MMAppDelegate.m in Sources */,
 				66AF167C18B812D500A92F7F /* main.m in Sources */,
-				66FF81F3194AD775000EF072 /* UIView+Animations.m in Sources */,
-				6662019B18C15523006A58AA /* MMStretchGestureRecognizer2.mm in Sources */,
+				66FF81F3194AD775000EF072 /* UIView+AnchorPoint.m in Sources */,
+				6662019B18C15523006A58AA /* MMStretchAverageGestureRecognizer.mm in Sources */,
 				666201A218C15820006A58AA /* MMVector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +466,7 @@
 					"$(inherited)",
 					/Users/adam/Downloads,
 					"/Users/adam/Documents/Code/loose-leaf/LooseLeaf/ShapeShifter",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShapeShifter/ShapeShifter-Prefix.pch";
@@ -485,6 +486,7 @@
 					"$(inherited)",
 					/Users/adam/Downloads,
 					"/Users/adam/Documents/Code/loose-leaf/LooseLeaf/ShapeShifter",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShapeShifter/ShapeShifter-Prefix.pch";

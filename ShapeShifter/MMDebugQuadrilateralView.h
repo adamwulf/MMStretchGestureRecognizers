@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Constants.h"
 
+// A helpful debug view that will draw the
+// quad on screen that will be used to
+// transform the image
 @interface MMDebugQuadrilateralView : UIView
 
 -(void) setQuadrilateral:(Quadrilateral)q;

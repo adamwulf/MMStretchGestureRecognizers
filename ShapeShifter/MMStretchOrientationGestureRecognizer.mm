@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Milestone Made, LLC. All rights reserved.
 //
 
-#import "MMStretchGestureRecognizer3.h"
+#import "MMStretchOrientationGestureRecognizer.h"
 #import "Constants.h"
-#import "NSMutableSet+Extras.h"
+#import "NSMutableOrderedSet+Extras.h"
 #import "MMVector.h"
 
 
-@interface MMStretchGestureRecognizer3 (Private)
+@interface MMStretchOrientationGestureRecognizer (Private)
 
 -(MMVector*) vectorHForQuad:(Quadrilateral)q;
 -(MMVector*) vectorVForQuad:(Quadrilateral)q;
@@ -25,7 +25,7 @@
 // the same. as you rotate the four points of the quad
 // in a circle, notice that the astronaut does not
 // rotate.
-@implementation MMStretchGestureRecognizer3{
+@implementation MMStretchOrientationGestureRecognizer{
     MMVector* startHVector;
     MMVector* startVVector;
 }

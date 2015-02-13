@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Milestone Made, LLC. All rights reserved.
 //
 
-#import "MMStretchGestureRecognizer2.h"
+#import "MMStretchAverageGestureRecognizer.h"
 #import "Constants.h"
-#import "NSMutableSet+Extras.h"
+#import "NSMutableOrderedSet+Extras.h"
 #import "MMVector.h"
 
 // this will stretch and rotate the image
@@ -18,7 +18,7 @@
 // rotate on screen, so that the image seems
 // to be held as you'd expect a physical object
 // to be held.
-@implementation MMStretchGestureRecognizer2
+@implementation MMStretchAverageGestureRecognizer
 
 
 -(id) init{
