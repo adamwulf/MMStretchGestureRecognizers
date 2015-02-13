@@ -1,0 +1,3 @@
+[submodule "Submodules/ios-hand-shadows"]
+	path = Submodules/ios-hand-shadows
+	url = git@github.com:adamwulf/ios-hand-shadows.git

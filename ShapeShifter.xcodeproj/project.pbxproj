@@ -18,11 +18,6 @@
 		66AF167C18B812D500A92F7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF167B18B812D500A92F7F /* main.m */; };
 		66AF168018B812D500A92F7F /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF167F18B812D500A92F7F /* MMAppDelegate.m */; };
 		66AF168218B812D500A92F7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66AF168118B812D500A92F7F /* Images.xcassets */; };
-		66AF168918B812D500A92F7F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AF168818B812D500A92F7F /* XCTest.framework */; };
-		66AF168A18B812D500A92F7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AF166F18B812D500A92F7F /* Foundation.framework */; };
-		66AF168B18B812D500A92F7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AF167318B812D500A92F7F /* UIKit.framework */; };
-		66AF169318B812D500A92F7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66AF169118B812D500A92F7F /* InfoPlist.strings */; };
-		66AF169518B812D500A92F7F /* ShapeShifterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF169418B812D500A92F7F /* ShapeShifterTests.m */; };
 		66AF16A018B8143400A92F7F /* MMShapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF169F18B8143400A92F7F /* MMShapeViewController.m */; };
 		66AF16A418B8154800A92F7F /* MMStretchExactGestureRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66AF16A318B8154800A92F7F /* MMStretchExactGestureRecognizer.mm */; };
 		66AFAD7F1A8E8C5600FD0263 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CD1BE618B824710091489C /* opencv2.framework */; };
@@ -34,16 +29,6 @@
 		66CD1BEA18B85FB00091489C /* space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66CD1BE918B85FB00091489C /* space.jpg */; };
 		66FF81F3194AD775000EF072 /* UIView+AnchorPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FF81F2194AD775000EF072 /* UIView+AnchorPoint.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		66AF168C18B812D500A92F7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 66AF166418B812D500A92F7F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 66AF166B18B812D500A92F7F;
-			remoteInfo = ShapeShifter;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6662019918C15523006A58AA /* MMStretchAverageGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMStretchAverageGestureRecognizer.h; sourceTree = "<group>"; };
@@ -65,11 +50,7 @@
 		66AF167E18B812D500A92F7F /* MMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMAppDelegate.h; sourceTree = "<group>"; };
 		66AF167F18B812D500A92F7F /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
 		66AF168118B812D500A92F7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		66AF168718B812D500A92F7F /* ShapeShifterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShapeShifterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66AF168818B812D500A92F7F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		66AF169018B812D500A92F7F /* ShapeShifterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShapeShifterTests-Info.plist"; sourceTree = "<group>"; };
-		66AF169218B812D500A92F7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		66AF169418B812D500A92F7F /* ShapeShifterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeShifterTests.m; sourceTree = "<group>"; };
 		66AF169E18B8143400A92F7F /* MMShapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMShapeViewController.h; sourceTree = "<group>"; };
 		66AF169F18B8143400A92F7F /* MMShapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMShapeViewController.m; sourceTree = "<group>"; };
 		66AF16A218B8154800A92F7F /* MMStretchExactGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMStretchExactGestureRecognizer.h; sourceTree = "<group>"; };
@@ -104,16 +85,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66AF168418B812D500A92F7F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66AF168918B812D500A92F7F /* XCTest.framework in Frameworks */,
-				66AF168B18B812D500A92F7F /* UIKit.framework in Frameworks */,
-				66AF168A18B812D500A92F7F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -145,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				66AF167518B812D500A92F7F /* ShapeShifter */,
-				66AF168E18B812D500A92F7F /* ShapeShifterTests */,
 				66AF166E18B812D500A92F7F /* Frameworks */,
 				66AF166D18B812D500A92F7F /* Products */,
 			);
@@ -155,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				66AF166C18B812D500A92F7F /* ShapeShifter.app */,
-				66AF168718B812D500A92F7F /* ShapeShifterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,24 +174,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		66AF168E18B812D500A92F7F /* ShapeShifterTests */ = {
-			isa = PBXGroup;
-			children = (
-				66AF169418B812D500A92F7F /* ShapeShifterTests.m */,
-				66AF168F18B812D500A92F7F /* Supporting Files */,
-			);
-			path = ShapeShifterTests;
-			sourceTree = "<group>";
-		};
-		66AF168F18B812D500A92F7F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				66AF169018B812D500A92F7F /* ShapeShifterTests-Info.plist */,
-				66AF169118B812D500A92F7F /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		66AF16A118B8153600A92F7F /* Gestures */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,24 +207,6 @@
 			productReference = 66AF166C18B812D500A92F7F /* ShapeShifter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		66AF168618B812D500A92F7F /* ShapeShifterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 66AF169B18B812D500A92F7F /* Build configuration list for PBXNativeTarget "ShapeShifterTests" */;
-			buildPhases = (
-				66AF168318B812D500A92F7F /* Sources */,
-				66AF168418B812D500A92F7F /* Frameworks */,
-				66AF168518B812D500A92F7F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				66AF168D18B812D500A92F7F /* PBXTargetDependency */,
-			);
-			name = ShapeShifterTests;
-			productName = ShapeShifterTests;
-			productReference = 66AF168718B812D500A92F7F /* ShapeShifterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -283,11 +216,6 @@
 				CLASSPREFIX = MM;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Adam Wulf";
-				TargetAttributes = {
-					66AF168618B812D500A92F7F = {
-						TestTargetID = 66AF166B18B812D500A92F7F;
-					};
-				};
 			};
 			buildConfigurationList = 66AF166718B812D500A92F7F /* Build configuration list for PBXProject "ShapeShifter" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -302,7 +230,6 @@
 			projectRoot = "";
 			targets = (
 				66AF166B18B812D500A92F7F /* ShapeShifter */,
-				66AF168618B812D500A92F7F /* ShapeShifterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -315,14 +242,6 @@
 				66AF167A18B812D500A92F7F /* InfoPlist.strings in Resources */,
 				66AF168218B812D500A92F7F /* Images.xcassets in Resources */,
 				66CD1BEA18B85FB00091489C /* space.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		66AF168518B812D500A92F7F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66AF169318B812D500A92F7F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,37 +266,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66AF168318B812D500A92F7F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66AF169518B812D500A92F7F /* ShapeShifterTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		66AF168D18B812D500A92F7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 66AF166B18B812D500A92F7F /* ShapeShifter */;
-			targetProxy = 66AF168C18B812D500A92F7F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		66AF167818B812D500A92F7F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				66AF167918B812D500A92F7F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		66AF169118B812D500A92F7F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				66AF169218B812D500A92F7F /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -497,46 +392,6 @@
 			};
 			name = Release;
 		};
-		66AF169C18B812D500A92F7F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShapeShifter.app/ShapeShifter";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ShapeShifter/ShapeShifter-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ShapeShifterTests/ShapeShifterTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		66AF169D18B812D500A92F7F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShapeShifter.app/ShapeShifter";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ShapeShifter/ShapeShifter-Prefix.pch";
-				INFOPLIST_FILE = "ShapeShifterTests/ShapeShifterTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -554,15 +409,6 @@
 			buildConfigurations = (
 				66AF169918B812D500A92F7F /* Debug */,
 				66AF169A18B812D500A92F7F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		66AF169B18B812D500A92F7F /* Build configuration list for PBXNativeTarget "ShapeShifterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				66AF169C18B812D500A92F7F /* Debug */,
-				66AF169D18B812D500A92F7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
