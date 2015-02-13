@@ -70,7 +70,7 @@
 #pragma mark - Quadrilateral
 
 -(Quadrilateral) getQuad{
-    return [self generateAverageQuadFor:[self getRawQuad]];
+    return [self generateAverageQuadFor:[self getExactQuad]];
 }
 
 // this generates a Quadrilateral struct from the clockwise touch locations.
@@ -78,7 +78,7 @@
 // that the touches are guaranteed form a clockwise quad only at the very beginning of
 // the gesture, but the user can spin, flip, and mix their fingers to create self
 // intersecting quads.
--(Quadrilateral) getRawQuad{
+-(Quadrilateral) getExactQuad{
     __block Quadrilateral output;
     [[self validTouches] enumerateObjectsUsingBlock:^(UITouch* touch, NSUInteger idx, BOOL* stop){
         CGPoint location = [touch locationInView:self.view];
@@ -95,7 +95,7 @@
     return output;
 }
 
-// if we use the getRawQuad only, then the transform we create by skewing that
+// if we use the getExactQuad only, then the transform we create by skewing that
 // raw quad will manipulate dramatically in 3d. This transform ends up to give
 // terrible results if the quad is manipulated by the user to be concave.
 //

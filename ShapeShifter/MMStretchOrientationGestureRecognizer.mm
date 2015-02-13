@@ -77,11 +77,11 @@
 
 
 -(Quadrilateral) getQuad{
-    return [self generateAverageQuadWithRotationFor:[self getRawQuad]];
+    return [self generateAverageQuadWithRotationFor:[self getExactQuad]];
 }
 
 
--(Quadrilateral) getRawQuad{
+-(Quadrilateral) getExactQuad{
     __block Quadrilateral output;
     [[self touches] enumerateObjectsUsingBlock:^(UITouch* touch, NSUInteger idx, BOOL* stop){
         CGPoint location = [touch locationInView:self.view];
@@ -222,7 +222,7 @@
     }
     
     if(self.state == UIGestureRecognizerStateBegan){
-        Quadrilateral currQuad = [self getRawQuad];
+        Quadrilateral currQuad = [self getExactQuad];
         startHVector = [self vectorHForQuad:currQuad];
         startVVector = [self vectorVForQuad:currQuad];
     }

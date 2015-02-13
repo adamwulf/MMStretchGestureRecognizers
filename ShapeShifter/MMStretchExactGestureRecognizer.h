@@ -22,4 +22,6 @@
 
 -(Quadrilateral) getQuad;
 
+-(Quadrilateral) getExactQuad;
+
 @end

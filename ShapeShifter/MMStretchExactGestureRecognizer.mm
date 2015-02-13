@@ -67,6 +67,10 @@
 }
 
 -(Quadrilateral) getQuad{
+    return [self getExactQuad];
+}
+
+-(Quadrilateral) getExactQuad{
     __block Quadrilateral output;
     [[self touches] enumerateObjectsUsingBlock:^(UITouch* touch, NSUInteger idx, BOOL* stop){
         CGPoint location = [touch locationInView:self.view];
@@ -82,7 +86,6 @@
     }];
     return output;
 }
-
 
 - (BOOL)canPreventGestureRecognizer:(UIGestureRecognizer *)preventedGestureRecognizer{
     return NO;
