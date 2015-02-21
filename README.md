@@ -1,25 +1,13 @@
-iOS UIBezierPath Performance
+MMStretchGestureRecognizers
 =====
 
-This code dramatically improves performance for common UIBezierPath operations, and it also
-brings UIBezierPath API closer to its NSBezierPath counterpart. For full background of this
-repo, checkout [the blogpost explaining what this framework does](http://blog.getlooseleaf.com/post/110511009139/improving-uibezierpath-performance-and-api).
+For context about this repo, check out [this blog post](http://blog.getlooseleaf.com/post/111386290589/using-augmented-reality-code-for-a-better-stretch).
 
-## What is this?
+This code provides three gestures that can be used to stretch a UIView using affine transforms. The first attempts to keep the four fingers in exactly the same visible locations on the image, but has trouble when those touches form a concave quad. The remaining two gestures allow for smooth stretching of the UIView.
 
-This framework adds caching into every UIBezierPath so that common operations can
-be performed in constant time. It also adds some missing NSBezierPath methods to the
-UIBezierPath class.
+Run the included example app to try each of the gestures to see their output.
 
-After linking this framework into your project, all Bezier paths will automatically be upgraded
-to use this new caching. No custom UIBezierPath allocation or initialization is required.
-
-For example, by default there is no O(1) way to retrieve elements from a UIBezierPath. In order to
-retrieve the first point of the curve, you must CGPathApply() and interate over the entire path
-to retrieve that single point. This framework changes that. For many algorithms, this can 
-dramatically affect performance.
-
-## Are you using PerformanceBezier?
+## Are you using these gestures?
 
 Let me know! I'd love to know where PerformanceBezier is using and how it's affecting your apps. Ping me
 at [@adamwulf](https://twitter.com/adamwulf)!
@@ -28,24 +16,18 @@ at [@adamwulf](https://twitter.com/adamwulf)!
 
 View the header files for full documentation.
 
-## Building the framework
-
-This library will generate a proper static framework bundle that can be used in any iOS7+ project.
-
 ## Including in your project
 
-1. Link against the built framework.
-2. Add "-ObjC++ -lstdc++" to the Other Linker Flags in the project's Settings
-3. #import <PerformanceBezier/PerformanceBezier.h>
-
-## JRSwizzle
-
-This framework includes and uses the [JRSwizzle](https://github.com/rentzsch/jrswizzle) library, which is
-licensed under the MIT license.
+1. Link against the included OpenCV framework.
+2. Copy the gesture .h and .m files into your project
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/us/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 United States License</a>.
+OpenCV is licensed under BSD: [http://opencv.org/license.html](http://opencv.org/license.html)
+
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 United States License</a>.
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/us/88x31.png" /></a><br />
 
 For attribution, please include:
 
