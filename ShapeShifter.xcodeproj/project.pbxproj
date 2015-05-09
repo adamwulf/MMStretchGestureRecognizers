@@ -21,14 +21,6 @@
 		66AF16A018B8143400A92F7F /* MMShapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF169F18B8143400A92F7F /* MMShapeViewController.m */; };
 		66AF16A418B8154800A92F7F /* MMStretchExactGestureRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66AF16A318B8154800A92F7F /* MMStretchExactGestureRecognizer.mm */; };
 		66AFAD7F1A8E8C5600FD0263 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CD1BE618B824710091489C /* opencv2.framework */; };
-		66AFAD851A8E985600FD0263 /* MMShadowHandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AFAD841A8E985600FD0263 /* MMShadowHandView.m */; };
-		66AFAD8F1A8E986600FD0263 /* MMShadowHand.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AFAD881A8E986600FD0263 /* MMShadowHand.m */; };
-		66AFAD901A8E986600FD0263 /* MMDrawingGestureShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AFAD8A1A8E986600FD0263 /* MMDrawingGestureShadow.m */; };
-		66AFAD911A8E986600FD0263 /* MMTwoFingerPanShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AFAD8C1A8E986600FD0263 /* MMTwoFingerPanShadow.m */; };
-		66AFAD921A8E986600FD0263 /* MMThumbAndIndexShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AFAD8E1A8E986600FD0263 /* MMThumbAndIndexShadow.m */; };
-		66AFAD9D1A8E988300FD0263 /* NSThread+BlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AFAD961A8E988300FD0263 /* NSThread+BlockAdditions.m */; };
-		66AFAD9E1A8E988300FD0263 /* UITouch+Distance.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AFAD981A8E988300FD0263 /* UITouch+Distance.m */; };
-		66AFAD9F1A8E988300FD0263 /* NSArray+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AFAD9A1A8E988300FD0263 /* NSArray+Extras.m */; };
 		66AFADA21A8E989100FD0263 /* PerformanceBezier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AFADA11A8E989100FD0263 /* PerformanceBezier.framework */; };
 		66B46AC318BA8FEC0059172F /* NSMutableOrderedSet+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B46AC218BA8FEC0059172F /* NSMutableOrderedSet+Extras.m */; };
 		66CD1BDB18B822E10091489C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CD1BDA18B822E10091489C /* Constants.m */; };
@@ -64,22 +56,6 @@
 		66AF169F18B8143400A92F7F /* MMShapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMShapeViewController.m; sourceTree = "<group>"; };
 		66AF16A218B8154800A92F7F /* MMStretchExactGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMStretchExactGestureRecognizer.h; sourceTree = "<group>"; };
 		66AF16A318B8154800A92F7F /* MMStretchExactGestureRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMStretchExactGestureRecognizer.mm; sourceTree = "<group>"; };
-		66AFAD831A8E985600FD0263 /* MMShadowHandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMShadowHandView.h; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/MMShadowHandView.h"; sourceTree = "<group>"; };
-		66AFAD841A8E985600FD0263 /* MMShadowHandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMShadowHandView.m; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/MMShadowHandView.m"; sourceTree = "<group>"; };
-		66AFAD871A8E986600FD0263 /* MMShadowHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMShadowHand.h; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/MMShadowHand.h"; sourceTree = "<group>"; };
-		66AFAD881A8E986600FD0263 /* MMShadowHand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMShadowHand.m; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/MMShadowHand.m"; sourceTree = "<group>"; };
-		66AFAD891A8E986600FD0263 /* MMDrawingGestureShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawingGestureShadow.h; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/MMDrawingGestureShadow.h"; sourceTree = "<group>"; };
-		66AFAD8A1A8E986600FD0263 /* MMDrawingGestureShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawingGestureShadow.m; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/MMDrawingGestureShadow.m"; sourceTree = "<group>"; };
-		66AFAD8B1A8E986600FD0263 /* MMTwoFingerPanShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMTwoFingerPanShadow.h; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/MMTwoFingerPanShadow.h"; sourceTree = "<group>"; };
-		66AFAD8C1A8E986600FD0263 /* MMTwoFingerPanShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMTwoFingerPanShadow.m; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/MMTwoFingerPanShadow.m"; sourceTree = "<group>"; };
-		66AFAD8D1A8E986600FD0263 /* MMThumbAndIndexShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMThumbAndIndexShadow.h; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/MMThumbAndIndexShadow.h"; sourceTree = "<group>"; };
-		66AFAD8E1A8E986600FD0263 /* MMThumbAndIndexShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMThumbAndIndexShadow.m; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/MMThumbAndIndexShadow.m"; sourceTree = "<group>"; };
-		66AFAD951A8E988300FD0263 /* NSThread+BlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSThread+BlockAdditions.h"; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/NSThread+BlockAdditions.h"; sourceTree = "<group>"; };
-		66AFAD961A8E988300FD0263 /* NSThread+BlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSThread+BlockAdditions.m"; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/NSThread+BlockAdditions.m"; sourceTree = "<group>"; };
-		66AFAD971A8E988300FD0263 /* UITouch+Distance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITouch+Distance.h"; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/UITouch+Distance.h"; sourceTree = "<group>"; };
-		66AFAD981A8E988300FD0263 /* UITouch+Distance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITouch+Distance.m"; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/UITouch+Distance.m"; sourceTree = "<group>"; };
-		66AFAD991A8E988300FD0263 /* NSArray+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Extras.h"; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/NSArray+Extras.h"; sourceTree = "<group>"; };
-		66AFAD9A1A8E988300FD0263 /* NSArray+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Extras.m"; path = "../Submodules/ios-hand-shadows/ios-hand-shadows/NSArray+Extras.m"; sourceTree = "<group>"; };
 		66AFADA11A8E989100FD0263 /* PerformanceBezier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PerformanceBezier.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/ShapeShifter-emqckwpjdajkeugxibiobmlpzevz/Build/Products/Debug-iphoneos/PerformanceBezier.framework"; sourceTree = "<group>"; };
 		66B46AC118BA8FEC0059172F /* NSMutableOrderedSet+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableOrderedSet+Extras.h"; sourceTree = "<group>"; };
 		66B46AC218BA8FEC0059172F /* NSMutableOrderedSet+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableOrderedSet+Extras.m"; sourceTree = "<group>"; };
@@ -177,7 +153,6 @@
 		66AF167518B812D500A92F7F /* ShapeShifter */ = {
 			isa = PBXGroup;
 			children = (
-				66AFAD931A8E986E00FD0263 /* shadow hands */,
 				666201A318C15825006A58AA /* Supporting Classes */,
 				6662019C18C15631006A58AA /* Debug View */,
 				66AF16A118B8153600A92F7F /* Gestures */,
@@ -214,53 +189,6 @@
 				666201A518C15F5D006A58AA /* MMStretchOrientationGestureRecognizer.mm */,
 			);
 			name = Gestures;
-			sourceTree = "<group>";
-		};
-		66AFAD821A8E984500FD0263 /* shadow view */ = {
-			isa = PBXGroup;
-			children = (
-				66AFAD831A8E985600FD0263 /* MMShadowHandView.h */,
-				66AFAD841A8E985600FD0263 /* MMShadowHandView.m */,
-			);
-			name = "shadow view";
-			sourceTree = "<group>";
-		};
-		66AFAD861A8E985F00FD0263 /* paths */ = {
-			isa = PBXGroup;
-			children = (
-				66AFAD871A8E986600FD0263 /* MMShadowHand.h */,
-				66AFAD881A8E986600FD0263 /* MMShadowHand.m */,
-				66AFAD891A8E986600FD0263 /* MMDrawingGestureShadow.h */,
-				66AFAD8A1A8E986600FD0263 /* MMDrawingGestureShadow.m */,
-				66AFAD8B1A8E986600FD0263 /* MMTwoFingerPanShadow.h */,
-				66AFAD8C1A8E986600FD0263 /* MMTwoFingerPanShadow.m */,
-				66AFAD8D1A8E986600FD0263 /* MMThumbAndIndexShadow.h */,
-				66AFAD8E1A8E986600FD0263 /* MMThumbAndIndexShadow.m */,
-			);
-			name = paths;
-			sourceTree = "<group>";
-		};
-		66AFAD931A8E986E00FD0263 /* shadow hands */ = {
-			isa = PBXGroup;
-			children = (
-				66AFAD941A8E987600FD0263 /* categories */,
-				66AFAD861A8E985F00FD0263 /* paths */,
-				66AFAD821A8E984500FD0263 /* shadow view */,
-			);
-			name = "shadow hands";
-			sourceTree = "<group>";
-		};
-		66AFAD941A8E987600FD0263 /* categories */ = {
-			isa = PBXGroup;
-			children = (
-				66AFAD951A8E988300FD0263 /* NSThread+BlockAdditions.h */,
-				66AFAD961A8E988300FD0263 /* NSThread+BlockAdditions.m */,
-				66AFAD971A8E988300FD0263 /* UITouch+Distance.h */,
-				66AFAD981A8E988300FD0263 /* UITouch+Distance.m */,
-				66AFAD991A8E988300FD0263 /* NSArray+Extras.h */,
-				66AFAD9A1A8E988300FD0263 /* NSArray+Extras.m */,
-			);
-			name = categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,23 +256,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66AFAD9D1A8E988300FD0263 /* NSThread+BlockAdditions.m in Sources */,
 				66CD1BDB18B822E10091489C /* Constants.m in Sources */,
 				66AF16A018B8143400A92F7F /* MMShapeViewController.m in Sources */,
 				66AF16A418B8154800A92F7F /* MMStretchExactGestureRecognizer.mm in Sources */,
-				66AFAD851A8E985600FD0263 /* MMShadowHandView.m in Sources */,
-				66AFAD901A8E986600FD0263 /* MMDrawingGestureShadow.m in Sources */,
-				66AFAD8F1A8E986600FD0263 /* MMShadowHand.m in Sources */,
-				66AFAD9F1A8E988300FD0263 /* NSArray+Extras.m in Sources */,
-				66AFAD911A8E986600FD0263 /* MMTwoFingerPanShadow.m in Sources */,
 				66B46AC318BA8FEC0059172F /* NSMutableOrderedSet+Extras.m in Sources */,
 				6662019F18C15648006A58AA /* MMDebugQuadrilateralView.m in Sources */,
 				666201A618C15F5D006A58AA /* MMStretchOrientationGestureRecognizer.mm in Sources */,
 				66AF168018B812D500A92F7F /* MMAppDelegate.m in Sources */,
 				66AF167C18B812D500A92F7F /* main.m in Sources */,
 				66FF81F3194AD775000EF072 /* UIView+AnchorPoint.m in Sources */,
-				66AFAD9E1A8E988300FD0263 /* UITouch+Distance.m in Sources */,
-				66AFAD921A8E986600FD0263 /* MMThumbAndIndexShadow.m in Sources */,
 				6662019B18C15523006A58AA /* MMStretchAverageGestureRecognizer.mm in Sources */,
 				666201A218C15820006A58AA /* MMVector.m in Sources */,
 			);

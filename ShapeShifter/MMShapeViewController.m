@@ -13,8 +13,6 @@
 #import "MMStretchOrientationGestureRecognizer.h"
 #import "UIView+AnchorPoint.h"
 #import "Constants.h"
-#import "MMShadowHandView.h"
-#import <PerformanceBezier/PerformanceBezier.h>
 
 @implementation MMShapeViewController{
     MMDebugQuadrilateralView* debugView;
@@ -28,8 +26,6 @@
     CATransform3D startTransform;
 
     UILabel* convexLabel;
-    
-    MMShadowHandView* shadowView;
 }
 
 const int INDETERMINANT = 0;
@@ -91,9 +87,6 @@ const int COLINEAR = 0;
     [self.view addSubview:gestureChooser];
     
     [self chooseGesture:gestureChooser];
-    
-    shadowView = [[MMShadowHandView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:shadowView];
 }
 
 -(void) chooseGesture:(UISegmentedControl*)control{
@@ -225,27 +218,14 @@ const int COLINEAR = 0;
                                   [NSValue valueWithCGPoint:quadForHandShadows.upperLeft]];
     NSArray* leftHandTouches = @[[NSValue valueWithCGPoint:quadForHandShadows.lowerRight],
                                   [NSValue valueWithCGPoint:quadForHandShadows.upperRight]];
-    if(distance(quadForHandShadows.lowerLeft, quadForHandShadows.upperLeft) >
-       distance(quadForHandShadows.lowerLeft, quadForHandShadows.lowerRight)){
+    if(distanceBetweenPoints(quadForHandShadows.lowerLeft, quadForHandShadows.upperLeft) >
+       distanceBetweenPoints(quadForHandShadows.lowerLeft, quadForHandShadows.lowerRight)){
         // rotate so that we match fingers to closer touches
         rightHandTouches = @[[NSValue valueWithCGPoint:quadForHandShadows.lowerLeft],
                              [NSValue valueWithCGPoint:quadForHandShadows.lowerRight]];
         leftHandTouches = @[[NSValue valueWithCGPoint:quadForHandShadows.upperLeft],
                             [NSValue valueWithCGPoint:quadForHandShadows.upperRight]];
     }
-    
-    if(gesture.state == UIGestureRecognizerStateBegan){
-        [shadowView startPanningObject:self.view withTouches:rightHandTouches forHand:RIGHTHAND];
-        [shadowView startPanningObject:self.view withTouches:leftHandTouches forHand:LEFTHAND];
-    }else if(gesture.state == UIGestureRecognizerStateChanged){
-        [shadowView continuePanningObject:self.view withTouches:rightHandTouches forHand:RIGHTHAND];
-        [shadowView continuePanningObject:self.view withTouches:leftHandTouches forHand:LEFTHAND];
-    }else if(gesture.state == UIGestureRecognizerStateEnded ||
-       gesture.state == UIGestureRecognizerStateCancelled){
-        [shadowView endPanningObject:self.view forHand:RIGHTHAND];
-        [shadowView endPanningObject:self.view forHand:LEFTHAND];
-    }
-
 }
 
 // translate the quad by the input point amount
@@ -305,4 +285,10 @@ int Convex(CGPoint p[4])
     else
         return(0);
 }
+
+static CGFloat distanceBetweenPoints(const CGPoint p1, const CGPoint p2) {
+    CGFloat dist = sqrt(pow(p2.x - p1.x, 2) + pow(p2.y - p1.y, 2));
+    return dist;
+}
+
 @end
