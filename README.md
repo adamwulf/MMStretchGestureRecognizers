@@ -1,7 +1,7 @@
 MMStretchGestureRecognizers
 =====
 
-For context about this repo, check out [this blog post](http://blog.getlooseleaf.com/post/111386290589/using-augmented-reality-code-for-a-better-stretch).
+For context about this repo, check out [this blog post](http://blog.getlooseleaf.com/post/111386290589/using-augmented-reality-code-for-a-better-stretch). These gestures power the clone gestures in [Loose Leaf](https://getlooseleaf.com).
 
 This code provides three gestures that can be used to stretch a UIView using affine transforms. The first attempts to keep the four fingers in exactly the same visible locations on the image, but has trouble when those touches form a concave quad. The remaining two gestures allow for smooth stretching of the UIView.
 
